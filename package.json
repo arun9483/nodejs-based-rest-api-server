@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-based-rest-api-server",
+  "version": "1.0.0",
+  "description": "webpack, nodeJs, typescript based rest api server",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src",
+    "dev": "nodemon",
+    "prod": "node dist",
+    "build": "tsc",
+    "preprod": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arun9483/nodejs-based-rest-api-server.git"
+  },
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "expressjs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arun9483/nodejs-based-rest-api-server/issues"
+  },
+  "homepage": "https://github.com/arun9483/nodejs-based-rest-api-server#readme",
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.12.18",
+    "nodemon": "^1.18.9",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
