@@ -8,7 +8,9 @@
     "dev": "nodemon",
     "prod": "node dist",
     "build": "tsc",
-    "preprod": "npm run build"
+    "preprod": "npm run build",
+    "debug": "cross-env PORT=4000 node --inspect dist",
+    "predebug": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,8 @@
   "devDependencies": {
     "@types/express": "^4.16.0",
     "@types/node": "^10.12.18",
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.2.0",
     "nodemon": "^1.18.9",
     "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
