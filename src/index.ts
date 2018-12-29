@@ -2,11 +2,11 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 
-import app from "./App";
+import application from "./App";
 
 const port = process.env.PORT || 3000;
 
-app.listen(port, (err: any) => {
+application.listen(port, (err: any) => {
   if (err) {
     // tslint:disable-next-line:no-console
     console.error(err);

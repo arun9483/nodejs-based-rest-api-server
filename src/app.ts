@@ -1,6 +1,6 @@
 import * as express from "express";
 
-class App {
+export class App {
   public express: any;
   constructor() {
     this.express = express();
